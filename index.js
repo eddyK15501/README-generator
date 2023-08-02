@@ -1,13 +1,4 @@
 const inquirer = require("inquirer");
-const { writeFile } = require("fs").promises;
-
-const writeToDist = async (content) => {
-  try {
-    await writeFile("./dist/README.md", content);
-  } catch (error) {
-    console.log(error);
-  }
-};
 
 const promptInquirer = async () => {
   console.log("Generate a README.md file. Input the following:");
@@ -64,6 +55,15 @@ const promptInquirer = async () => {
       when: ({ installConfirm }) => {
         return installConfirm ? true : false;
       },
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Choose one of the following licenses:",
+        choices: ['MIT', 'Apache', 'GPL'],
+        validate: (license) => {
+            return license ? true : (console.log('Please choose a license'), false)
+        }
     },
     {
       type: "input",
