@@ -1,7 +1,7 @@
 # README.md Generator • [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This is a Node.js application that generates a README.md file, using Inquirer.js version 8.2.4
+This is a Node.js application that generates a README.md file from the terminal, using Inquirer.js version 8.2.4
 
 ## Installation
 * Required: Install the LTS or latest version of Node.js
