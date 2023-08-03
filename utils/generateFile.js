@@ -1,4 +1,4 @@
-const check = require('./check')
+const check = require('./checkMarkdown')
 
 const createMarkdown = (data) => {
   return `
@@ -20,9 +20,9 @@ const createMarkdown = (data) => {
   ## License
   * This application is covered under the ${data.license} license
   ## Questions
-  #### Check out my Github at: [${data.userName}](https://www.github.com/${data.userName})
+  #### Check out my Github page at: [${data.userName}](https://www.github.com/${data.userName})
 
-  If you have any questions, please feel free to contact me at [${data.email}](${data.email})
+  If you have any other questions, please feel free to contact me at [${data.email}](${data.email})
   `
 }
 
