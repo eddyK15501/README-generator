@@ -24,7 +24,7 @@ ${check.createContribute(data.contribute)}
 ${check.createTesting(data.test)}
 
 ## License
-* This application is covered under the ${data.license} license.
+This application is covered under the ${data.license} license.
 
 ## Questions
 Check out my Github page: [${data.username}](https://www.github.com/${data.username})
