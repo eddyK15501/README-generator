@@ -33,7 +33,7 @@ node index.js
 <img width="230px" src="./utils/screenshots/Screenshot 2023-08-03 at 4.01.52 AM.png" />
 
 ## Credits
-* To my relentless classmates at the UNC coding bootcamp
+* To my persistent classmates at the UNC coding bootcamp
 * Written by Edward Kim
 
 ## License
