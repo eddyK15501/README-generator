@@ -38,6 +38,16 @@ const createTesting = (test) => {
     }
 }
 
+const createBadge = (license) => {
+    if (license === 'MIT') {
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    } else if (license === 'Apache') {
+        return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    } else {
+        return `[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+    }
+}
+
 const checkInstall = (install) => {
     if (install) {
         return '* [Installation](#installation)'
@@ -75,6 +85,7 @@ module.exports = {
     createUsage,
     createContribute,
     createTesting,
+    createBadge,
     checkInstall,
     checkUsage,
     checkContribute,

@@ -1,17 +1,8 @@
-const { writeFile } = require("fs").promises;
 const check = require('./check')
-
-const writeToDist = async (content) => {
-  try {
-    await writeFile("./dist/README.md", content);
-  } catch (error) {
-    console.log(error);
-  }
-};
 
 const createMarkdown = (data) => {
   return `
-  # ${data.title}
+  # ${data.title} * ${check.createBadge(data.license)}
   ## Description
   ${data.description}
   ## Table of Contents
@@ -22,10 +13,10 @@ const createMarkdown = (data) => {
   * [License](#license)
   * [Questions](#questions)
   
-  ${createInstall(data.installInput)}
-  ${createUsage(data.usage)}
-  ${createContribute(data.contribute)}
-  ${createTesting(data.test)}
+  ${check.createInstall(data.installInput)}
+  ${check.createUsage(data.usage)}
+  ${check.createContribute(data.contribute)}
+  ${check.createTesting(data.test)}
   ## License
   * This application is covered under the ${data.license} license
   ## Questions
@@ -35,9 +26,4 @@ const createMarkdown = (data) => {
   `
 }
 
-
-
-module.exports = {
-    writeToDist,
-    createMarkdown
-}
+module.exports = createMarkdown
