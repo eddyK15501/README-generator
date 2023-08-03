@@ -95,6 +95,8 @@ const promptInquirer = async () => {
       },
     ]);
 
+    console.log(data)
+
     const readmeGenerated = createMarkdown(data);
 
     writeToDist(readmeGenerated);
