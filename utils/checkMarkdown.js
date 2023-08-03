@@ -1,3 +1,4 @@
+// Check if Installation, Usage, Contributions, and Testing is necessary; if so, create header for the sections
 const createInstall = (install) => {
   if (install) {
     return `## Installation
@@ -34,6 +35,7 @@ ${test}`;
   }
 };
 
+// Create a badge for the selected license from the list
 const createBadge = (license) => {
   if (license === "MIT") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
@@ -44,6 +46,7 @@ const createBadge = (license) => {
   }
 };
 
+// Check if Installation, Usage, Contributions, and Testing has any input; if so, create tabs for the section within the Table of Contents
 const checkInstall = (install) => {
   if (install) {
     return "* [Installation](#installation)";

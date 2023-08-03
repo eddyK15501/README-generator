@@ -1,7 +1,9 @@
+// CommonJS module import statements; fs.promises for async/await
 const inquirer = require("inquirer");
 const { writeFile } = require("fs").promises;
 const createMarkdown = require("./utils/generateFile");
 
+// Asynchronous function to writeFile to the dist folder
 const writeToDist = async (content) => {
   try {
     await writeFile("./dist/README.md", content);
@@ -10,6 +12,7 @@ const writeToDist = async (content) => {
   }
 };
 
+// Prompt inquirer.js within the terminal
 const promptInquirer = async () => {
   console.log("Generate a README.md file. Input the following:");
 
@@ -97,6 +100,7 @@ const promptInquirer = async () => {
 
     console.log(data)
 
+    // Generate README.md file with the object returned from 'data'
     const readmeGenerated = createMarkdown(data);
 
     writeToDist(readmeGenerated);

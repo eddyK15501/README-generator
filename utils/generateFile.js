@@ -1,5 +1,6 @@
 const check = require('./checkMarkdown')
 
+// Create a README.md template using JavaScript
 const createMarkdown = (data) => {
   return (
 `# ${data.title} • ${check.createBadge(data.license)}
