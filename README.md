@@ -8,6 +8,7 @@ Node.js application that generates a README.md file, using the node package: Inq
 * Required: npm install
 
 ## Usage
+* Clone the repository
 
 
 ## Credits
