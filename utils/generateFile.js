@@ -2,7 +2,7 @@ const check = require('./check')
 
 const createMarkdown = (data) => {
   return `
-  # ${data.title} * ${check.createBadge(data.license)}
+  # ${data.title} • ${check.createBadge(data.license)}
   ## Description
   ${data.description}
   ## Table of Contents
