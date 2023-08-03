@@ -20,7 +20,7 @@ const createUsage = (usage) => {
 
 const createContribute = (contribute) => {
     if (contribute) {
-        return `## Contribute
+        return `## Contributions
         ${contribute}        
         `
     } else {
@@ -56,7 +56,7 @@ const checkUsage = (usage) => {
 
 const checkContribute = (contribute) => {
     if (contribute) {
-        return '* [Contribution](#contribution)'
+        return '* [Contributions](#contributions)'
     } else {
         return ''
     }
@@ -68,4 +68,15 @@ const checkTesting = (test) => {
     } else {
         return ''
     }
+}
+
+module.exports = {
+    createInstall,
+    createUsage,
+    createContribute,
+    createTesting,
+    checkInstall,
+    checkUsage,
+    checkContribute,
+    checkTesting
 }

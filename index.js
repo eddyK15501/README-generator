@@ -57,15 +57,6 @@ const promptInquirer = async () => {
       },
     },
     {
-        type: "list",
-        name: "license",
-        message: "Choose one of the following licenses:",
-        choices: ['MIT', 'Apache', 'GPL'],
-        validate: (license) => {
-            return license ? true : (console.log('Please choose a license'), false)
-        }
-    },
-    {
       type: "input",
       name: "usage",
       message: "Usage. How to use this repository:",
@@ -79,6 +70,15 @@ const promptInquirer = async () => {
       type: "input",
       name: "test",
       message: "Testing. Instructions on how to test:",
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Choose one of the following licenses:",
+        choices: ['MIT', 'Apache', 'GPL'],
+        validate: (license) => {
+            return license ? true : (console.log('Please choose a license'), false)
+        }
     },
   ]);
 
