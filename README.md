@@ -6,6 +6,7 @@ This is a Node.js application that generates a README.md file from the terminal,
 ## Installation
 * Required: Install the LTS or latest version of Node.js
 * Required: npm install
+* Required: inquirer@8.2.4
 
 ## Usage
 * #### Clone the repository
