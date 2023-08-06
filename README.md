@@ -3,6 +3,10 @@
 ## Description
 This is a Node.js application that generates a README.md file from the terminal, using Inquirer.js version 8.2.4
 
+## Video Demonstration of Application
+* [Click Here](https://github.com/eddyK15501/inquirer-readme-generator/issues/1#issue-1838239887)
+
+
 ## Installation
 * Required: Install the LTS or latest version of Node.js
 * Required: npm install
